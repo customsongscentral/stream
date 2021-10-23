@@ -3,7 +3,7 @@
 	import Songs from './components/Songs.svelte';
 	let p1, p2, s1, s2, win, songs, bans, picks, tiebreaker;
 
-	const ws = new WebSocket(`ws://arcturus.fightthe.pw:3000`);
+	const ws = new WebSocket(import.meta.env.VITE_WS_URL);
 	const onMessage = msg => {
 		const data = JSON.parse(msg.data);
 		localStorage.setItem('data', msg.data);

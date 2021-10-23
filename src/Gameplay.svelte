@@ -4,7 +4,7 @@
 	let p1: string, p2: string, s1: number, s2: number, pick: any, win: number;
 	let points1: number, streak1: number, sp1: number, points2: number, streak2: number, sp2: number;
 
-	const ws = new WebSocket(`ws://arcturus.fightthe.pw:3000`);
+	const ws = new WebSocket(import.meta.env.VITE_WS_URL);
 	const onMessage = msg => {
 		if (msg.data[0] == '{') {
 			const data = JSON.parse(msg.data);
