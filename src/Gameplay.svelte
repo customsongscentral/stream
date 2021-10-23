@@ -22,11 +22,11 @@
 			if (player == 0) {
 				points1 = +points;
 				streak1 = +streak;
-				sp1 = +sp;
+				sp1 = +sp / 10;
 			} else if (player == 1) {
 				points2 = +points;
 				streak2 = +streak;
-				sp2 = +sp;
+				sp2 = +sp / 10;
 			}
 		}
 	};
