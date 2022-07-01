@@ -58,7 +58,7 @@
           <div class="tb" />
         {/if}
         <div class="cat">{@html song.cat}</div>
-        <div class="title" style={song.fontSize ? `font-size:${song.fontSize}` : ''}>{@html song.artist} - {@html song.name}</div>
+        <div class="title" style={song.fontSize ? `font-size:${song.fontSize}` : ''}>{@html song.artist + " - " + song.name}</div>
         <div class="charter">{@html song.charter}</div>
         <div class="source">{@html song.source}</div>
       </div>
@@ -245,6 +245,10 @@
   }
   .title {
     width: 580px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
   }
   .title[style^="font"] {
     display: flex;
