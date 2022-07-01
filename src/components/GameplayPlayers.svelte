@@ -20,7 +20,7 @@
         {/if}
       {/each}
     </div>
-    <div class="p1">{p1}</div>
+    <div class="p1">{@html p1}</div>
   </div>
   <div class="player2">
     <div class="s2">
@@ -32,7 +32,7 @@
         {/if}
       {/each}
     </div>
-    <div class="p2">{p2}</div>
+    <div class="p2">{@html p2}</div>
   </div>
 </div>
 

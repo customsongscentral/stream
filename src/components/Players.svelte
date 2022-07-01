@@ -10,7 +10,7 @@
 </script>
 
 <div class="players">
-  <div class="p1">{p1}</div>
+  <div class="p1">{@html p1}</div>
   <div class="s1">
     {#each t as i}
       {#if s1 < i}
@@ -29,7 +29,7 @@
       {/if}
     {/each}
   </div>
-  <div class="p2">{p2}</div>
+  <div class="p2">{@html p2}</div>
 </div>
 
 <style>

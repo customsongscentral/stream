@@ -57,10 +57,10 @@
         {#if song.cat == `Tiebreaker (${tiebreaker})`}
           <div class="tb" />
         {/if}
-        <div class="cat">{song.cat}</div>
-        <div class="title" style={song.fontSize ? `font-size:${song.fontSize}` : ''}>{song.artist} - {song.name}</div>
-        <div class="charter">{song.charter}</div>
-        <div class="source">{song.source}</div>
+        <div class="cat">{@html song.cat}</div>
+        <div class="title" style={song.fontSize ? `font-size:${song.fontSize}` : ''}>{@html song.artist} - {@html song.name}</div>
+        <div class="charter">{@html song.charter}</div>
+        <div class="source">{@html song.source}</div>
       </div>
     {/if}
   {/each}

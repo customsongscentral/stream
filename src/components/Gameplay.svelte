@@ -15,8 +15,8 @@
 
 <div class="gameplay">
   {#if pick.song.cat}
-    <div class={`pick p${pick.picker}`} style={pick.song.fontSize ? `font-size:${pick.song.fontSize}` : ''}>
-      [{pick.song.cat}] {pick.song.artist} - {pick.song.name} ({pick.song.charter})
+    <div class={`pick p${pick.picker}`}>
+      [{@html pick.song.cat}] {@html pick.song.artist} - {@html pick.song.name} ({@html pick.song.charter})
     </div>
   {:else}
     <div class="pick">&nbsp;</div>
